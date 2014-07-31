@@ -2,9 +2,45 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Auction Homepage</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 </head>
 <body>
+
+<!-- Navbar -->
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0);">ABC Auction</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left navbar-input-group" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter product name">
+                </div>
+                <button id="findBtn" type="submit" class="btn btn-default">Search</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
+                </li>
+                <li><a href="javascript:void(0);"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping
+                    cart</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- / Navbar -->
+
+
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>
