@@ -16,9 +16,12 @@ jQuery(function($)
            console.log( "Request Failed: " + err );
        });
    }
+});
 
+function showProducts()
+{
     var template = $("#featured-products-list");
     var url = "assets/data/featured-products.json";
     var parentContainer = $("#items-list");
     $.showItems(template,url,parentContainer);
-});
+}
