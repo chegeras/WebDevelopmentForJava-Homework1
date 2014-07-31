@@ -2,15 +2,6 @@
     "heading":"Search products",
     "items": [
         {
-            "title": "Item 2",
-            "thumb": "assets/img/02.jpg",
-            "url": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
-            "timeleft": "2",
-            "watchers": "3",
-            "price": "43"
-        },
-        {
             "title": "Item 3",
             "thumb": "assets/img/03.jpg",
             "url": "",

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 
 </head>
-<body onload="showProducts()">
+<body>
 
 <!-- Navbar -->
 <div class="navbar navbar-inverse">
@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter product name">
                 </div>
-                <button id="findBtn" type="submit" class="btn btn-default" onclick="showSearchResult(); return false">Search</button>
+                <button id="findBtn" type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span> Help</a>
@@ -93,11 +93,54 @@
                     <div class="col-xs-4">
                        <a href="javascript:void(0)">
                            <img src="{{thumb}}" class="img-responsive"/>
-                       </a>fonts
+                       </a>
                     </div>
                     <div class="product-description-holder col-xs-8">
                         <h2><a href="javascript:void(0)">{{title}}</a></h2>
                         <p>{{description}}</p>
+                    </div>
+                </div>
+            </li>
+
+            {{/each}}
+        </script>
+
+        <script id="search-products-list" type="text/x-handlebars-template">
+            {{#each this}}
+
+            <li class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <h3 class="visible-xs"><a href="javascript:void(0)">{{title}}</a></h3>
+                    <div class="col-xs-4">
+                        <a href="javascript:void(0)">
+                            <img src="{{thumb}}" class="img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="product-description-holder col-xs-8">
+                        <h2 class="hidden-xs"><a href="javascript:void(0)">{{title}}</a></h2>
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+
+                <div class="row visible-md" >
+                   <div class="col-xs-4">
+                       <div class="col-md-12">
+                            <b style="white-space: nowrap;">{{timeleft}}h left</b>
+                       </div>
+                       <div class="col-md-12">
+                            <b style="white-space: nowrap;">{{time}}</b>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="row hidden-md" >
+                    <div class="col-xs-4">
+                        <div class="col-sm-6 col-xs-6">
+                            <b class="pull-right" style="text-align:right; font-size:10px; white-space: nowrap;">{{timeleft}}h left</b>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <b class="pull-left" style="font-size:10px; white-space: nowrap;">{{time}}</b>
+                        </div>
                     </div>
                 </div>
             </li>
