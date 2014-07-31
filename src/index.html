@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="en" id="heading-container">
     <meta charset="UTF-8">
     <title>Auction Homepage</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
 </head>
 <body>
 
@@ -38,7 +39,7 @@
 </div>
 <!-- / Navbar -->
 
-<div class="container" id="featured-products">
+<div class="container">
 
     <div class="row">
         <!-- Featured Products -->
@@ -80,122 +81,37 @@
 
     <div class="row">
         <!-- Featured Products list with thumbnails and description  -->
-        <ul class="list-unstyled">
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
-                </div>
+        <ul class="list-unstyled" id="items-list">
 
-                <div class="product-description-holder col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/03.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/04.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/05.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <div class="col-md-4">
-                    <a href="javascript:void(0)"><img src="assets/img/06.jpg" alt="" class="img-responsive"></a>
-                </div>
-
-                <div class="col-md-8">
-                    <h2><a href="javascript:void(0)">Item's title</a></h2>
-
-                    <p>
-                        <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </li>
         </ul>
+
+        <script id="featured-products-list" type="text/x-handlebars-template">
+            {{#each this}}
+
+            <li class="col-md-4">
+                <div class="row">
+                    <div class="col-xs-4">
+                       <a href="javascript:void(0)">
+                           <img src="{{thumb}}" class="img-responsive"/>
+                       </a>fonts
+                    </div>
+                    <div class="product-description-holder col-xs-8">
+                        <h2><a href="javascript:void(0)">{{title}}</a></h2>
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            </li>
+
+            {{/each}}
+        </script>
         <!-- / Featured Products list with thumbnails and description  -->
     </div>
 </div>
 
 <script src="assets/js/jquery-2.1.0.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/handlebars-v1.3.0.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
