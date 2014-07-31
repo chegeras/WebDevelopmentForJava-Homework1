@@ -5,9 +5,7 @@ jQuery(function($)
 {
     $.showItems = function showItems(template, dataUrl, parentContainer)
    {
-       console.debug("start compile template");
         var compiledTemplate = Handlebars.compile(template.html());
-       console.debug("finish compile template");
        $.getJSON(dataUrl, function(data) {
            //headingContainer.text(data.heading);
            parentContainer.html('').append(compiledTemplate(data.items));
@@ -24,4 +22,9 @@ function showProducts()
     var url = "assets/data/featured-products.json";
     var parentContainer = $("#items-list");
     $.showItems(template,url,parentContainer);
+}
+
+function showSearchResult()
+{
+    $("#featured-product-carousel").toggle("fast");
 }
