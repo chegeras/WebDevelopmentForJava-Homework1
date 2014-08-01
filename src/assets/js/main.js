@@ -12,7 +12,7 @@ jQuery(function($)
            var date = new Date();
            $.each(data.items,function(index,value)
            {
-                value.time = "Today " + date.toTimeString().replace(/.*(\d{2}:\d{2}).*/, "$1");
+                value.time = "Today " + date.toLocaleTimeString().slice(0,5);
            });
            parentContainer.html('').append(compiledTemplate(data.items));
        }).fail(function( jqxhr, textStatus, error ) {
