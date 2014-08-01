@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="min-width: 500">
 <head lang="en" id="heading-container">
     <meta charset="UTF-8">
     <title>Auction Homepage</title>
@@ -152,12 +152,23 @@
                 <div class="row hidden-md hidden-lg col-sm-4 col-xs-6" >
                     <div class="col-xs-12">
                         <div class="col-sm-6 col-xs-6">
-                            <b class="glyphicon glyphicon-eye-open" style="text-align:right; font-size:10px; white-space: nowrap;">   {{watchers}}</b>
+                                <b class="glyphicon glyphicon-usd" style="text-align:right; font-size:10px; white-space: nowrap;"> {{price}}</b>
+                        </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <b style="text-align:right; font-size:10px; white-space: nowrap;">Current price</b>
+                            </div>
+
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="col-sm-6 col-xs-6">
+                            <b class="glyphicon glyphicon-eye-open" style="text-align:right; font-size:10px; white-space: nowrap;"> {{watchers}}</b>
                         </div>
                         <div class="col-sm-6 col-xs-6">
                             <b style="text-align:right; font-size:10px; white-space: nowrap;">Watchers</b>
                         </div>
                     </div>
+
                     <div class="col-xs-12">
                         <div class="col-sm-6 col-xs-6">
                             <b class="pull-left" style="text-align:right; font-size:10px; white-space: nowrap;">{{timeleft}}h left</b>
