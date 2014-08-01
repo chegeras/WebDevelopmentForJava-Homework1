@@ -2,30 +2,30 @@
     "heading":"Search products",
     "items": [
         {
-            "title": "Item 3",
+            "title": "Item 1",
             "thumb": "assets/img/03.jpg",
             "url": "",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
-            "timeleft": "2",
+            "timeleft": "24",
             "watchers": "12",
             "price": "39"
         },
         {
-            "title": "Item 5",
+            "title": "Item 2",
             "thumb": "assets/img/05.jpg",
             "url": "",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
             "timeleft": "2",
-            "watchers": "12",
+            "watchers": "14",
             "price": "84"
         },
         {
-            "title": "Item 6",
+            "title": "Item 3",
             "thumb": "assets/img/06.jpg",
             "url": "",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
-            "timeleft": "2",
-            "watchers": "12",
+            "timeleft": "14",
+            "watchers": "100",
             "price": "99"
         }
     ]
