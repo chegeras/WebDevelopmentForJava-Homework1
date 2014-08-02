@@ -107,11 +107,86 @@
         </script>
 
         <script id="search-products-list" type="text/x-handlebars-template">
-
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li class="active">Search</li>
             </ol>
+
+            <form class="form-group search-item" role="search">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <h4>Product</h4>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-12">
+                                <p>
+                                    <input type="text" class="form-control" placeholder="Product title">
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12">
+                                <p>
+                                    <select class=" form-control">
+                                        <option></option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="NY">New York</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="VA">Virginia</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h4>Current Price</h4>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                    <input class="form-control" type="text" placeholder="1000">
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                    <input class="form-control" type="text" placeholder="1500">
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="col-xs-12">
+                                <input class="form-control" type="range" placeholder="slider placeholder">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h4>Max Auction Close Date</h4>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <input class="form-control" type="date" value="01.01.2014">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+                            </span>
+                                </div>
+                                <p/>
+                            </div>
+                            <div class="col-xs-8">
+                                <label class="control-label">Number of bids</label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="number" class="form-control bfh-number" placeholder="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4" >Find now</button>
+            </form>
+            <br>
+            <hr/>
 
             {{#each this}}
 
